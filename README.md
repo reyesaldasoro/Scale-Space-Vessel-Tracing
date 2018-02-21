@@ -15,8 +15,19 @@ specifically designed funcions. The analysis is based on a technique
 called "Scale Space" which progressively blurs an image to observe its
 characteristics at different "scales": fine details will be observed at
 the first scales and then will be erased as the image is filtered,
-whilst larger characteristics will dominate the lower scales. For more
-detail, the paper by Lindeberg explains the technique: (<a
+whilst larger characteristics will dominate the lower scales. 
+</p>
+<p>
+This work was was accepted for publication in Microvascular Research:
+</p>
+<p>
+Online chromatic and scale-space microvessel-tracing analysis for transmitted light optical images
+CC Reyes-Aldasoro, MA Björndahl, S Akerman, J Ibrahim, MK Griffiths, GM Tozer,
+<a href="https://www.sciencedirect.com/science/article/pii/S0026286212001586">
+Microvascular research</a> 84 (3), 330-339 
+</p>
+<p>
+ For more detail on Scale-Space, the paper by Lindeberg explains the technique: (<a
  href="http://www.nada.kth.se/%7Etony/earlyvision.html">http://www.nada.kth.se/~tony/earlyvision.html</a>)
 </p>
   
