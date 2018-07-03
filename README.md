@@ -15,7 +15,7 @@ specifically designed funcions. The analysis is based on a technique
 called "Scale Space" which progressively blurs an image to observe its
 characteristics at different "scales": fine details will be observed at
 the first scales and then will be erased as the image is filtered,
-whilst larger characteristics will dominate the lower scales. 
+whilst larger characteristics will dominate the lower scales.
 </p>
 <p>
 This work was was accepted for publication in Microvascular Research:
@@ -24,13 +24,13 @@ This work was was accepted for publication in Microvascular Research:
 Online chromatic and scale-space microvessel-tracing analysis for transmitted light optical images
 CC Reyes-Aldasoro, MA Björndahl, S Akerman, J Ibrahim, MK Griffiths, GM Tozer,
 <a href="https://www.sciencedirect.com/science/article/pii/S0026286212001586">
-Microvascular research</a> 84 (3), 330-339 
+Microvascular research</a> 84 (3), 330-339
 </p>
 <p>
  For more detail on Scale-Space, the paper by Lindeberg explains the technique: (<a
  href="http://www.nada.kth.se/%7Etony/earlyvision.html">http://www.nada.kth.se/~tony/earlyvision.html</a>)
 </p>
-  
+
 
 
 
@@ -42,7 +42,7 @@ file is in the working directory one way of reading the data is with
 'imread' and 'imagesc' can be used to display it as a figure: </p>
 <pre class="codeinput">dataIn= imread(<span class="string">'wt_010906_mouse7_60minsROI2.bmp'</span>);<br>figure(1)<br>imagesc(dataIn)<br></pre>
 
-![Screenshot](vasculatureManualScaleSpace_01.png)
+![Screenshot](Figures/vasculatureManualScaleSpace_01.png)
 
 
 <h2>Drag and Drop<a name="2"></a></h2>
@@ -91,7 +91,7 @@ vessels try 1:35) and a calibration parameter; for images that are
 <pre class="codeinput">figure(2);imagesc(dataOut);<br></pre>
 
 
-![Screenshot](vasculatureManualScaleSpace_02.png)
+![Screenshot](Figures/vasculatureManualScaleSpace_02.png)
 
 
 <h2>All vessels<a name="7"></a></h2>
@@ -101,7 +101,7 @@ above and the rest in black</p>
 
 <pre class="codeinput">figure(3);imagesc(dataOut2);<br></pre>
 
-![Screenshot](vasculatureManualScaleSpace_03.png)
+![Screenshot](Figures/vasculatureManualScaleSpace_03.png)
 
 <h2>Mask and vessels<a name="8"></a></h2>
 
@@ -109,7 +109,7 @@ above and the rest in black</p>
 width in grey</p>
 <pre class="codeinput">figure(4);imagesc(dataOut3);<br></pre>
 
-![Screenshot](vasculatureManualScaleSpace_04.png)
+![Screenshot](Figures/vasculatureManualScaleSpace_04.png)
 
 
 <h2>Mask of the top 50<a name="9"></a></h2>
@@ -117,7 +117,7 @@ width in grey</p>
 their width in grey</p>
 <pre class="codeinput">figure(5);imagesc(dataOut4);<br></pre>
 
-![Screenshot](vasculatureManualScaleSpace_05.png)
+![Screenshot](Figures/vasculatureManualScaleSpace_05.png)
 
 
 <h2>Cropping the input data<a name="10"></a></h2>
@@ -133,14 +133,14 @@ passing 300 rows and 300 columns to the function: </p>
 <pre class="codeoutput">          Generate Scale Space<br>          Calculate derivatives in the gradient direction<br>          Generate Ridge Surfaces<br>          Calculate Ridge Strength<br>          Calculate Ridge Saliency<br>          Calculate Final Metrics<br></pre>
 
 
-![Screenshot](vasculatureManualScaleSpace_06.png)
+![Screenshot](Figures/vasculatureManualScaleSpace_06.png)
 
 <h2>
 Code</h2>
 
 To run this code you will need Matlab, the Image Processing toolbox and the following files:
 <pre class="codeinput">
-BranchPoints <br /> 
+BranchPoints <br />
 EndPoints <br />
 calculateDataOut <br />
 calculateRidgeParams <br />
